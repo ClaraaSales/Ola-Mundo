@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ameaças</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cherry+Cream+Soda&family=Luckiest+Guy&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="ameaças.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand logo">
+        <img src="./imgs/logo.png" width="120" height="100" class="d-inline-block align-top">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="./sobre_nos.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ameacas.html">Ameaças</a></li>
+          <li class="nav-item"><a class="nav-link" href="./mitos.html">Mitos e Dúvidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./legislacao.html">Legislação</a></li>
+          <li class="nav-item"><a class="nav-link" href="./guia.html">Como Denunciar</a></li>
+          <li class="nav-item"><a class="nav-link" href="../denuncias/denuncia_html.php">Denuncie</a></li>
+          <li class="nav-item"><a class="nav-link" href="../denuncias/minhas_denuncias.php">Minhas Denúncias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ongs.html">Ong's</a></li>
+          <li class="nav-item">
+            <a class="btn btn-light" href="../login/cadastro.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-image">
+   <div class="hero-text">
+    <h1>AMEAÇAS</h1>
+    <p>Explore os principais perigos que a fauna silvestre enfrenta.<br>
+      Compreender essas ameaças é essencial para identificar<br>
+      e denunciar ações que colocam a vida dos animais em risco.
+    </p>
+  </div>
+</section>
+
+<section class="graficos">
+  <h3 class="grafico-h3">População de vida selvagem</h3>
+
+  <div class="grafico-item direita">
+    <div class="grafico-wrapper">
+      <img src="./imgs/graficoo.png" alt="Gráfico Hoje" class="grafico-img">
+      <div id="dados-hoje" class="dados-popup">
+        <p>O tamanho médio das populações de vida selvagem monitoradas
+           sofreu uma catastrófica redução de 73% em apenas 50 anos (1970-2020).</p>
+           <br>
+           <p>- 23% representa atualmente a quantidade de populações de vida selvagem monitoradas que restaram</p><br>
+           <p>- 73% representa atualmente a quantidade de populações de vida selvagem monitoradas que foram perdidas</p>
+      </div>
+    </div>
+    <button onclick="toggleDados('dados-hoje')">Visualizar</button>
+  </div>
+</section>
+
+<script>
+function toggleDados(id) {
+  const popup = document.getElementById(id);
+  if (popup.style.display === 'flex') {
+    popup.style.display = 'none';
+  } else {
+    popup.style.display = 'flex';
+  }
+}
+</script>
+
+<section class="cards-section">
+  <h2 class="titulo">Quem está em risco?</h2>
+
+  <div class="carousel-wrapper">
+    <button class="arrow left-arrow">&#10094;</button>
+
+    <div class="cards-container">
+
+      <div class="card">
+        <img src="./imgs/onça.jfif" alt="Imagem 1">
+        <h3>Mamíferos</h3>
+        <a href="./animais/mamiferos.html" class="btn-card">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="./imgs/tartaruga.jfif" alt="Imagem 2">
+        <h3>Répteis</h3>
+        <a href="./animais/repteis.html" class="btn-card">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="./imgs/pintinho.jfif" alt="Imagem 3">
+        <h3>Aves</h3>
+        <a href="./animais/aves.html" class="btn-card">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="./imgs/peixin.jfif" alt="Imagem 4">
+        <h3>Peixes</h3>
+        <a href="./animais/peixes.html" class="btn-card">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="./imgs/sapin.jfif" alt="Imagem 5">
+        <h3>Anfíbios</h3>
+        <a href="./animais/anfibios.html" class="btn-card">Saiba mais</a>
+      </div>
+
+    </div>
+
+    <button class="arrow right-arrow">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  const container = document.querySelector('.cards-container');
+  const cardWidth = container.querySelector('.card').offsetWidth + 20;
+
+  document.querySelector('.right-arrow').addEventListener('click', () => {
+    container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  document.querySelector('.left-arrow').addEventListener('click', () => {
+    container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+</script>
+
+<section class="dados-section">
+  <div class="dados-container">
+
+    <div class="dado-item">
+      <h3>Mais de 1.200</h3>
+      <p>Espécies de animais estão ameaçadas de extinção no Brasil.</p>
+    </div>
+
+    <div class="dado-item">
+      <h3>90%</h3>
+      <p>Animais traficados morrem antes de chegar ao destino. </p>
+    </div>
+
+    <div class="dado-item">
+      <h3>38 milhões</h3>
+      <p>De animais silvestres são traficados por ano no Brasil. </p>
+    </div>
+
+    <div class="dado-item">
+      <h3>Desmatamento</h3>
+      <p>É a principal causa da ameaça de extinção das espécies no Brasil.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="info-dinamica-section">
+  <div class="section-title">Tipos de Ameaças</div>
+
+  <div class="info-dinamica-container">
+
+    <div class="info-list">
+      <div class="info-item active" onclick="selectItem(this, 'info1')">
+        <img src="./imgs/simbolo.jfif" class="info-icon" alt="Ícone"> Perca de Habitat
+      </div>
+      <div class="info-item" onclick="selectItem(this, 'info2')">
+        <img src="./imgs/simbolo.jfif" class="info-icon" alt="Ícone"> Maus Tratos
+      </div>
+      <div class="info-item" onclick="selectItem(this, 'info3')">
+        <img src="./imgs/simbolo.jfif" class="info-icon" alt="Ícone"> Tráfico de Animais
+      </div>
+      <div class="info-item" onclick="selectItem(this, 'info4')">
+        <img src="./imgs/simbolo.jfif" class="info-icon" alt="Ícone"> Caça Ilegal
+      </div>
+    </div>
+
+    <div class="info-box" id="infoBox">
+      <h3 class="desc">Descrição</h3>
+    <p> A perda de habitat no Brasil é resultado de uma combinação de fatores, incluindo a
+    agricultura, urbanização, exploração de recursos naturais, desmatamento e poluição.
+    Essas atividades humanas têm como principal impacto a destruição de áreas naturais,
+    essenciais para a sobrevivência de diversas espécies.</p>
+
+    <h2>39 anos</h2>
+    <p>de perda significativa de vegetação nativa na Amazônia.</p>
+
+    <h2>2008-2023</h2>
+    <p>período com maior redução de áreas naturais no Pantanal</p>
+
+    <p>Essa perda de habitat não apenas afeta a biodiversidade, mas também contribui para o 
+      aumento de riscos climáticos e a degradação ambiental.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const infos = {
+  info1: 
+     `<h3 class="desc">Descrição</h3>
+    <p> A perda de habitat no Brasil é resultado de uma combinação de fatores, incluindo a
+    agricultura, urbanização, exploração de recursos naturais, desmatamento e poluição.
+    Essas atividades humanas têm como principal impacto a destruição de áreas naturais,
+    essenciais para a sobrevivência de diversas espécies.</p>
+
+    <h2>39 anos</h2>
+    <p>de perda significativa de vegetação nativa na Amazônia.</p>
+
+    <h2>2008-2023</h2>
+    <p class="paragrafo">período com maior redução de áreas naturais no Pantanal</p>
+
+    <p>Essa perda de habitat não apenas afeta a biodiversidade, mas também contribui para o 
+      aumento de riscos climáticos e a degradação ambiental.</p>`,
+
+  info2: `<h3 class="desc">Descrição</h3>
+    <p> Maus tratos aos animais referem-se a qualquer ato de abuso, crueldade ou negligência
+      que cause sofrimento físico ou psicológico a animais, sejam eles domésticos, silvestres 
+      ou exóticos. Isso inclui agressões físicas, manter animais em condições inadequadas, 
+      abandono, envenenamento e o uso de animais em atividades que causem dor e sofrimento.</p>
+
+    <h2>8 a 20 milhões</h2>
+    <p>de euros, estimativa de lucro anual gerado pelo tráfico e práticas relacionadas aos maus tratos de animais
+      em todo o mundo.</p>
+
+    <h2>Lei nº 9.605</h2>
+    <p>(1998) estabelece sanções penais e administrativas para atos de crueldade e abuso contra animais,
+      reforçando a importância da proteção e do respeito à vida animal no Brasil.</p>`,
+
+  info3: `<h3 class="desc">Descrição</h3>
+    <p>A caça e a pesca ilegal envolvem a captura, ferimento ou morte de animais sem permissão legal. 
+    Esse tipo de prática afeta inúmeras espécies e o equilíbrio ecológico do planeta. 
+    Além disso, movimenta bilhões de reais no mercado negro.</p>
+
+    <h2>38 milhões</h2>
+    <p>de animais são retirados da natureza no Brasil a cada ano.</p>
+
+    <h2>9 em cada 10</h2>
+    <p>morrem antes de chegar ao destino final, devido às condições de transporte.</p>
+    
+    <p>A venda online facilita o tráfico e dificulta a fiscalização.</p>`,
+
+  info4: `<h3 class="desc">Descrição</h3>
+    <p> A caça e pesca ilegal ferem e matam animais sem permissão, afetando o equilíbrio 
+      ecológico e movimentando bilhões no mercado negro.</p>
+
+    <h2>4.658 animais</h2>
+    <p>mortos identificados em grupos de caça ilegal no Facebook em todo o Brasil.</p>
+
+    <h2>2018 - 2020</h2>
+    <p>período em que o estudo revelou a disseminação da caça ilegal nas redes sociais.</p>
+    
+    <p>A caça ameaça espécies e reforça a necessidade de fiscalização e educação ambiental.</p>`
+};
+
+function selectItem(element, key) {
+  document.querySelectorAll('.info-item').forEach(item => item.classList.remove('active'));
+  element.classList.add('active');
+  document.getElementById('infoBox').innerHTML = infos[key];
+}
+</script>
+
+<section class="mapa-section" style="padding:40px 20px;">
+  <h2 class="cards-title" style="text-align:center;margin-bottom:16px;">Regiões ameaçadas</h2>
+
+  <div class="carousel-wrapper" style="max-width:1100px;margin:0 auto;position:relative;">
+    
+    <button class="arrow left-arrow-mapa" aria-label="Anterior" style="left:-40px;">&#10094;</button>
+
+    <div class="cards-container-mapa" style="display:flex;overflow:hidden;scroll-behavior:smooth;">
+      
+      <div class="map-slide" style="flex:0 0 100%; position:relative;">
+        <img src="./imgs/norte.png" alt="Região Norte" style="width:100%;height:auto;display:block;">
+        <div class="map-bolinha" style="top: 40%; left: 40%;" data-nome="Floresta Amazônica" data-link="https://maps.app.goo.gl/G38UgVrrimZ4TDJs7?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 55%; left: 30%;" data-nome="Amazonas" data-link="https://maps.app.goo.gl/3pLJDmBT1jjfQ2Sf6?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 60%; left: 70%;" data-nome="Pará" data-link="https://maps.app.goo.gl/PADdXu9rUrzYjn4W7?g_st=aw"></div>
+      </div>
+
+      <div class="map-slide" style="flex:0 0 100%; position:relative;">
+        <img src="./imgs/nordeste.png" alt="Região Nordeste" style="width:100%;height:auto;display:block;">
+        <div class="map-bolinha" style="top: 40%; left: 45%;" data-nome="Piauí" data-link="https://maps.app.goo.gl/hAKZgvUfhViABa4L7?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 60%; left: 50%;" data-nome="Bahia" data-link="https://maps.app.goo.gl/7HQvbwq1Sft8nF9X7?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 30%; left: 55%;" data-nome="Fortaleza (Ceará)" data-link="https://maps.app.goo.gl/ZFTTx6NEq4M2Rj2G6?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 28%; left: 63%;" data-nome="Natal (Rio Grande do Norte)" data-link="https://maps.app.goo.gl/Yfqs1rVcWDVXERTd9?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 36%; left: 65%;" data-nome="Caatinga (Região extensa)" data-link="https://maps.app.goo.gl/UQn7Z9RzmAv2k6bL8?g_st=aw"></div>
+      </div>
+
+      <div class="map-slide" style="flex:0 0 100%; position:relative;">
+        <img src="./imgs/centro_oeste.png" alt="Região Centro Oeste" style="width:100%;height:auto;display:block;">
+        <div class="map-bolinha" style="top: 40%; left: 45%;" data-nome="Pantanal (Mato Grosso)" data-link="https://maps.app.goo.gl/u7cbBgscFXuih3to9?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 60%; left: 60%;" data-nome="Goiás" data-link="https://maps.app.goo.gl/Un2wvqnUzFfi8KvJA?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 25%; left: 50%;" data-nome="Mato Grosso" data-link="https://maps.app.goo.gl/Jb1Pqktsp2HowYx28?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 70%; left: 45%;" data-nome="Cerrado (Região extensa)" ></div>
+      </div>
+
+      <div class="map-slide" style="flex:0 0 100%; position:relative;">
+        <img src="./imgs/sudeste.png" alt="Região Sudeste" style="width:100%;height:auto;display:block;">
+        <div class="map-bolinha" style="top: 30%; left: 60%;" data-nome="Minas Gerais" data-link="https://maps.app.goo.gl/XWk9Ti1pKbMXp2xW6?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 60%; left: 40%;" data-nome="São Paulo" data-link="https://maps.app.goo.gl/isosnjsNNbKSbjKQ7?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 65%; left: 65%;" data-nome="Rio de Janeiro" data-link="https://maps.app.goo.gl/ZGbydy3B9sUeiWDm6?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 45%; left: 71%;" data-nome="Mata Atlântica (grande parte da região sudeste)" data-link="https://maps.app.goo.gl/iLH3XytsdPo5Wyrq6?g_st=aw"></div>
+      </div>
+
+      <div class="map-slide" style="flex:0 0 100%; position:relative;">
+        <img src="./imgs/sul.png" alt="Região Sul" style="width:100%;height:auto;display:block;">
+        <div class="map-bolinha" style="top: 29%; left: 60%;" data-nome="Curitiba" data-link="https://maps.app.goo.gl/vpCZFDphHPDPiVgY9?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 20%; left: 52%;" data-nome="Paraná" data-link="https://maps.app.goo.gl/ZRQzYn6bb73C4sr7A?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 42%; left: 60%;" data-nome="Santa Catarina" data-link="https://maps.app.goo.gl/82fN9V1raUVtgjSw5?g_st=aw"></div>
+        <div class="map-bolinha" style="top: 55%; left: 50%;" data-nome="Rio Grande do Sul" data-link="https://maps.app.goo.gl/1RVDNty7mXtLniP48?g_st=aw"></div>
+      </div>
+
+    </div>
+
+    <button class="arrow right-arrow-mapa" aria-label="Próximo" style="right:-40px;">&#10095;</button>
+  </div>
+
+<div id="mapModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+ background:#fff; padding:20px; border-radius:10px; z-index:1000; max-width:300px; box-shadow:0 2px 10px rgba(0,0,0,0.3);">
+  <h3 id="modalNome"></h3>
+  <a id="modalLink" href="#" target="_blank">Abrir no Maps</a>
+  <button id="modalClose" style="display:block;margin-top:10px;">Fechar</button>
+</div>
+
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.cards-container-mapa');
+    const slides = container.querySelectorAll('.map-slide');
+    const leftBtn = document.querySelector('.left-arrow-mapa');
+    const rightBtn = document.querySelector('.right-arrow-mapa');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      container.scrollTo({
+        left: container.clientWidth * currentIndex,
+        behavior: 'smooth'
+      });
+    }
+
+    rightBtn.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    });
+
+    leftBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = slides.length - 1;
+      }
+      updateCarousel();
+    });
+  });
+
+document.querySelectorAll('.map-bolinha').forEach(b => {
+  b.addEventListener('click', () => {
+    const nome = b.dataset.nome;
+    const link = b.dataset.link;
+
+    document.getElementById('modalNome').innerText = nome;
+    document.getElementById('modalLink').href = link;
+
+    document.getElementById('mapModal').style.display = 'block';
+  });
+});
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('mapModal').style.display = 'none';
+});
+</script>
+
+<footer class="custom-footer">
+  <div class="footer-content">
+
+    <div class="footer-box footer-col1">
+      <div class="footer-logo-title">
+        <img src="./imgs/logo_pagina.png" alt="Logo" class="footer-logo">
+        <h2 style="margin-left: -20px;">TecFauna</h2>
+      </div>
+      <p>Unindo pessoas e tecnologia para proteger
+      quem não pode pedir ajuda.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contate-nos</h3>
+      <p>(+55) 119999999</p>
+      <p>E-mail: <a href="tecfauna@gmail.com">tecfauna@gmail.com</a></p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Links rápidos</h3>
+      <ul>
+        <li><a href="./sobre_nos.html">Sobre nós</a></li>
+        <li><a href="./mitos.html">Mitos e dúvidas</a></li>
+        <li><a href="./legislacao.html">Legislação</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <ul>
+        <li><a href="./guia.html">Como denunciar</a></li>
+        <li><a href="../denuncias/denuncia_html.php">Denuncie</a></li>
+        <li><a href="../denuncias/minhas_denuncias.php">Minhas denúncias</a></li>
+        <li><a href="./ongs.html">ONG's</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    © 2025 TecFauna. Projeto educacional de conscientização ambiental.
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

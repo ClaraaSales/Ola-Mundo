@@ -1,0 +1,604 @@
+body{
+  background-color: #000000;
+}
+
+.navbar {
+  background-color: #333; 
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-height: 100px;
+  overflow: visible;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: 100px;
+  margin-top: -10px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-right: 25px;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00d47c;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00d4a6 !important;
+}
+
+.navbar-nav .btn-light { 
+  color: #ffffff; 
+  background-color: #00d47c; 
+  border: 1px solid #017e4a; 
+  border-radius: 0 !important;
+  width: 90px !important;
+} 
+
+.navbar-nav .btn-light:hover { 
+  background-color: #005f37; 
+  border: 1px solid #003f25; 
+  color: white;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url('./imgs/bambii.jfif');
+  background-size: cover;
+  background-position: center -90px; 
+  height: 765px;
+  overflow: hidden;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589); 
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.quiz-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  height: 600px;
+  color: #ffffff;
+  background-image: url('./imgs/desf3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.quiz-box-um {
+  background-image: url('./imgs/Rasga-mortalha.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 600px;          
+  height: 450px;          
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 40px;
+  margin-left: 200px;
+  box-sizing: border-box; 
+  position: relative;  
+}
+
+.quiz-box-um::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.685); 
+  z-index: 1;
+}
+
+.quiz-box-um p{
+  position: relative;
+  z-index: 3;
+}
+
+.quiz-buttons button {
+  padding: 10px 20px;
+  margin-right: 40px;
+  margin-top: 100px;
+  background-color: #00d47c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quiz-buttons {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.quiz-buttons button:hover {
+  background-color: #015a35;
+}
+
+.quiz-answer-um {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(8, 54, 16, 0.705);
+  padding: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.quiz-answer-um.show {
+  opacity: 1;
+}
+
+.quiz-section-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  height: 600px;
+  color: #fff;
+  background-image: url('./imgs/desf1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.quiz-section-2 .quiz-box-dois {
+  background-image: url('./imgs/cobraaaa.webp');
+  background-size: cover;
+  background-position: center;
+  width: 600px;          
+  height: 450px;          
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 40px;
+  margin-right: 200px;
+  box-sizing: border-box; 
+  position: relative;  
+  z-index: 2;
+}
+
+.quiz-box-dois::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664); 
+  z-index: 1;
+}
+
+.quiz-box-dois p{
+  position: relative;
+  z-index: 3;
+}
+
+.quiz-section-2 .quiz-answer-dois {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: rgba(8, 54, 16, 0.705);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-right: 20px;
+}
+
+.quiz-section-2 .quiz-answer-dois.show {
+  opacity: 1;
+}
+
+.quiz-section-3 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  height: 600px;
+  color: #ffffff;
+  background-image: url('./imgs/desf4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.quiz-box-tres {
+  background-image: url('./imgs/morcego.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 600px;          
+  height: 450px;          
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 40px;
+  margin-left: 200px;
+  box-sizing: border-box; 
+  position: relative;  
+}
+
+.quiz-box-tres::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692); 
+  z-index: 1;
+}
+
+.quiz-box-tres p{
+  position: relative;
+  z-index: 3;
+}
+
+.quiz-answer-tres {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(8, 54, 16, 0.705);
+  padding: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.quiz-answer-tres.show {
+  opacity: 1;
+}
+
+.quiz-section-4 {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  height: 600px;
+  color: #fff;
+  background-image: url('./imgs/desf5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.quiz-section-4 .quiz-box-quatro {
+  background-image: url('./imgs/gatinho.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 600px;          
+  height: 450px;          
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 40px;
+  margin-right: 200px;
+  box-sizing: border-box; 
+  position: relative;  
+}
+
+.quiz-box-quatro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692); 
+  z-index: 1;
+}
+
+.quiz-box-quatro p{
+  position: relative;
+  z-index: 3;
+}
+
+.quiz-section-4 .quiz-answer-quatro {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: rgba(8, 54, 16, 0.705);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-right: 20px;
+}
+
+.quiz-section-4 .quiz-answer-quatro.show {
+  opacity: 1;
+}
+
+.listas-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 60px;
+  background-color: #ffffff ;
+  height: 600px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.item-lista {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.item-lista img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.item-texto h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Acme', sans-serif;
+}
+
+.item-texto p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: #000000;
+}
+
+.secao-imagem-textos {
+  position: relative;
+  background-image: url('./imgs/panda_vermelho.png');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: start;
+}
+
+.bloco-texto {
+  width: 30%;
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.bloco-texto::before {
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 0;
+  bottom: 0; 
+  width: 1px; 
+  background-color: #ffffff; 
+}
+
+.bloco-texto h1 {
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: start;
+  color: #fff;
+  font-family: 'Acme', sans-serif;
+}
+
+.bloco-texto p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.secao-pergunta {
+  display: flex;
+  gap: 50px;
+  padding: 60px;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 700px;
+  justify-content: center;
+}
+
+.lado-imagem img {
+  max-width: 650px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.lado-conteudo h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+  font-family: 'Acme', sans-serif;
+}
+
+.accordion .card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.accordion .card-header button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #017e4a;
+  border: none;
+  width: 700px;
+  text-align: left;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.accordion .card-body {
+  width: 700px;
+}
+
+.accordion .card-header button:hover {
+  background-color: #00b86b;
+  text-decoration: none;
+}
+
+.accordion .card-header button::after {
+  content: "\25BC";
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.accordion .collapse.show + .card-header button::after,
+.accordion .card-header button[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion .card-body {
+  font-size: 15px;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+}
+
+.custom-footer { 
+  background: linear-gradient(135deg, #009f7d, #0b7d6a, #005348);
+  color: #fff; 
+  padding: 40px 20px 20px; 
+  font-family: Arial, sans-serif; 
+  position: relative; 
+} 
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-col1 .footer-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer-box {
+  flex: 1 1 22%;
+}
+
+.footer-box h2, .footer-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 6px;
+}
+
+.footer-box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-box ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-box a{
+  color: #ffffff !important;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-divider {
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+}

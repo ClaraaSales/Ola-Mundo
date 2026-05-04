@@ -1,0 +1,328 @@
+
+.navbar {
+  background-color: #333; 
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-height: 100px; 
+  overflow: visible;
+}
+
+.navbar-brand img {
+  height: 100px; 
+  width: 100px;
+  margin-top: -10px; 
+}
+
+
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-right: 25px;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 0%; 
+  height: 2px; 
+  background-color: #00d47c; 
+  transition: width 0.3s ease; 
+}
+
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; 
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #00d4a6 !important;
+}
+
+
+.navbar-nav .btn-light { 
+  color: #ffffff; 
+  background-color: #00d47c; 
+  border: 1px solid #017e4a; 
+  border-radius: 0 !important;
+  width: 90px !important;
+} 
+
+ 
+.navbar-nav .btn-light:hover { 
+  background-color: #005f37; 
+    border: 1px solid #003f25; 
+  color: white;
+}
+
+
+
+body {
+    margin: 0;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+    background-image: url('../paginas/imgs/koalinha.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+form#formDenuncia {
+    background-color: white;
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+
+
+.titulo {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 150px;
+     font-family: "Cherry Cream Soda", system-ui;
+}
+
+.text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#descricao {
+  width: 80%;
+  height: 250px;        
+  padding: 10px;        
+  font-size: 16px;      
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-left: 90px;
+  background-color: #fff;
+  color: #333;
+}
+
+.footer_p{
+  color: #fff !important;
+  margin-left: -10px !important;
+}
+
+#descricao::placeholder {
+  color: #777;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 80%; 
+    padding: 10px;
+    margin: 5px auto 15px auto; 
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form h1{
+  text-align: center;
+  margin-bottom: -20px;
+  margin-top: 40px;
+  font-family: 'Acme', sans-serif;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 80%;
+    padding: 10px;
+    margin: 5px auto 15px auto; 
+    display: block;
+    }
+
+    input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 80%; 
+    padding: 10px;
+    margin: 5px auto 15px auto; 
+    display: block;
+    }
+
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+
+input[type="submit"] {
+    background-color: #00d47c;
+    border: 1px solid #017e4a !important; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: #015331;
+    border: 1px solid #004428 !important; 
+}
+
+.mensagem {
+    background: linear-gradient(135deg, #00d4a6, #0fac92, #018675);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 700px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.mensagem .caixa{
+  color: #fff;
+}
+
+.linha-local {
+  display: flex;
+  align-items: flex-end; 
+  margin-bottom: 20px; 
+}
+
+.linha-local .campo {
+  flex: 1; 
+}
+
+.linha-local select,
+.linha-local input {
+  width: 300px;
+}
+
+
+
+#lista {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    margin-left: 100px;
+}
+
+
+h1 + h1, h1 + h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: 100px;
+}
+
+.custom-footer { 
+  background: linear-gradient(135deg, #009f7d, #0b7d6a, #005348);
+  color: #fff; 
+  padding: 40px 20px 20px; 
+  font-family: Arial, sans-serif; 
+  position: relative; 
+} 
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-col1 .footer-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer-box {
+  flex: 1 1 22%;
+}
+
+.footer-box h2, .footer-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 6px;
+}
+
+.footer-box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-box ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-box a{
+  color: #ffffff !important;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-divider {
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+}

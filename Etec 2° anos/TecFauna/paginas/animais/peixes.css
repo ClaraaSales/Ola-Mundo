@@ -1,0 +1,415 @@
+.navbar {
+  background-color: #333; 
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-height: 100px;
+  overflow: visible;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: 100px;
+  margin-top: -10px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-right: 25px;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00d47c;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00d4a6 !important;
+}
+
+.navbar-nav .btn-light { 
+  color: #ffffff; 
+  background-color: #00d47c; 
+  border: 1px solid #017e4a; 
+  border-radius: 0 !important;
+  width: 90px !important;
+} 
+
+.navbar-nav .btn-light:hover { 
+  background-color: #005f37; 
+  border: 1px solid #003f25; 
+  color: white;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url('../imgs/peixin.jfif');
+  background-size: cover;
+  background-position: center;
+  height: 765px;
+  overflow: hidden;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 180px;
+  left: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 65px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.secao-animal1 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/tub_azeiteiro.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+[class^="secao-animal"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589); 
+  z-index: 1;
+}
+
+.conteudo-esquerdo {
+  color: rgb(0, 0, 0);
+  max-width:800px;
+  margin-left: 100px;
+}
+
+.conteudo-esquerdo h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.imagem-direita img {
+  width: 500px; 
+  height: 600px;
+  object-fit: cover;
+  margin-right: 100px;
+  border-radius: 9px;
+  position: relative;
+  z-index: 2;
+}
+
+.listas-section {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  padding: 60px;
+  background-color: #ffffff;
+  gap: 30px;
+  height: 600px;
+}
+
+.titulo-lista {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  color: #00b871;
+  font-family: "Cherry Cream Soda", system-ui;
+}
+
+.listas-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+.lista {
+  flex: 0 0 auto;
+  min-width: 260px;
+}
+
+.item-lista {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.item-lista img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.item-texto h3 {
+  margin: 0;
+  font-size: 28px; 
+  font-weight: bold;
+  color: #008327;
+  font-family: 'Acme', sans-serif;
+}
+
+.item-texto p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  color: #000000;
+}
+
+.secao-animal2 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/tub_toninha.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal3 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/tub_branco.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal4 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/cação_bico.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal5 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/cacao_doce.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal6 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/cacao_anjo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal7 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/sardinhas.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal8 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/tub_baleia.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal10 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/canivete.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal11 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/cascudo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.secao-animal12 {
+  position: relative;
+  width: 100%;
+  height: 750px; 
+  background-image: url('../imgs/tub_mangona.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.custom-footer { 
+  background: linear-gradient(135deg, #009f7d, #0b7d6a, #005348);
+  color: #fff; 
+  padding: 40px 20px 20px; 
+  font-family: Arial, sans-serif; 
+  position: relative; 
+} 
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-col1 .footer-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer-box {
+  flex: 1 1 22%;
+}
+
+.footer-box h2, .footer-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 6px;
+}
+
+.footer-box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-box ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-box a{
+  color: #ffffff !important;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-divider {
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+}

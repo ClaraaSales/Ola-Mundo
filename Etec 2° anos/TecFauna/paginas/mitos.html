@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mitos e Dúvidas</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cherry+Cream+Soda&family=Luckiest+Guy&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="mitos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <a class="navbar-brand logo">
+        <img src="./imgs/logo.png" width="60" height="30" class="d-inline-block align-top">
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item"><a class="nav-link" href="./sobre_nos.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ameacas.html">Ameaças</a></li>
+          <li class="nav-item"><a class="nav-link" href="./mitos.html">Mitos e Dúvidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./legislacao.html">Legislação</a></li>
+          <li class="nav-item"><a class="nav-link" href="./guia.html">Como Denunciar</a></li>
+          <li class="nav-item"><a class="nav-link" href="../denuncias/denuncia_html.php">Denuncie</a></li>
+          <li class="nav-item"><a class="nav-link" href="../denuncias/minhas_denuncias.php">Minhas Denúncias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ongs.html">Ong's</a></li>
+          
+          <li class="nav-item">
+            <a class="btn btn-light" href="../login/cadastro.html">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-image"> 
+   <div class="hero-text">
+    <br>
+    <br>
+    <h1>Mitos e Dúvidas <br> 
+    frequentes</h1>
+    <p>Descubra informações cientificamente corretas para desmistificar as <br>
+    lendas mais comuns sobre nossa fauna. Queremos que você aprenda a diferenciar <br>
+    FATO de MITO para que possa interagir com a natureza de forma mais segura, <br>
+    consciente e respeitosa.
+    </p>
+  </div>
+</section>
+
+<br>
+
+<section class="quiz-section"> 
+  <div class="quiz-box-um">
+    <p class="p" style="font-size: 25px;">A coruja Rasga Mortalha anuncia a morte de alguém próximo</p>
+    <div class="quiz-buttons">
+      <button onclick="showAnswer('verdadeiro')">Fato</button>
+      <button onclick="showAnswer('falso')">Mito</button>
+    </div>
+  </div>
+
+  <div class="quiz-answer-um" id="quiz-answer-um"></div>
+
+</section>
+
+<script>
+function showAnswer(choice) {
+  const answerDiv = document.getElementById('quiz-answer-um');
+
+  if(choice === 'verdadeiro') {
+    answerDiv.innerHTML = "Incorreto! <br> Corujas não têm relação com mortos nem presságios, isso é um mito do folclore brasileiro, que vem do medo do som que fazem à noite.";
+  } else if(choice === 'falso') {
+    answerDiv.innerHTML = "Correto! <br> Corujas não têm relação com mortos nem presságios, isso é um mito do folclore brasileiro, que vem do medo do som que fazem à noite.";
+  }
+
+   answerDiv.classList.remove('show');
+  setTimeout(() => answerDiv.classList.add('show'), 50);
+}
+</script>
+
+<br>
+
+
+<section class="quiz-section-2"> 
+  <div class="quiz-answer-dois" id="quiz-answer-2">
+  </div>
+  
+  <div class="quiz-box-dois">
+    <p class="p" style="font-size: 25px;">Animais silvestres criados desde filhotes se tornam bons animais de estimação,
+    mansos e felizes. </p>
+    <div class="quiz-buttons">
+      <button onclick="showAnswer2('verdadeiro')">Fato</button>
+      <button onclick="showAnswer2('falso')">Mito</button>
+    </div>
+  </div>
+</section>
+
+<script>
+function showAnswer2(choice) {
+  const answerDiv = document.getElementById('quiz-answer-2');
+
+  if(choice === 'verdadeiro') {
+    answerDiv.innerHTML = "Incorreto! <br> O instinto do animal silvestre é indomável. Criado em cativeiro, ele vive em sofrimento crônico e estresse por não conseguir expressar seus comportamentos naturais (caçar, voar). Isso o condena a uma vida infeliz, desequilibrada e pode causar reações agressivas ou apáticas.";
+  } else if(choice === 'falso') {
+    answerDiv.innerHTML = "Correto! <br> O instinto do animal silvestre é indomável. Criado em cativeiro, ele vive em sofrimento crônico e estresse por não conseguir expressar seus comportamentos naturais (caçar, voar). Isso o condena a uma vida infeliz, desequilibrada e pode causar reações agressivas ou apáticas.";
+  }
+
+   answerDiv.classList.remove('show'); 
+  setTimeout(() => answerDiv.classList.add('show'), 50);
+}
+</script>
+
+<br>
+
+
+<section class="quiz-section-3"> 
+  <div class="quiz-box-tres">
+    <p class="p" style="font-size: 25px;">Morcegos são sujos, cegos e todos transmitem raiva.</p>
+    <div class="quiz-buttons">
+      <button onclick="showAnswer3('verdadeiro')">Fato</button>
+      <button onclick="showAnswer3('falso')">Mito</button>
+    </div>
+  </div>
+
+  <div class="quiz-answer-tres" id="quiz-answer-3">
+  </div>
+
+</section>
+
+<script>
+function showAnswer3(choice) {
+  const answerDiv = document.getElementById('quiz-answer-3');
+
+  if(choice === 'verdadeiro') {
+    answerDiv.innerHTML = "Incorreto! <br> Morcegos são animais limpos ágeis e não são cegos, São vitais para o ecossistema, pois a maioria se alimenta de frutas ou insetos, sendo excelentes polinizadores e dispersores de sementes. Embora raramente transmitam raiva, por serem silvestres, nunca devem ser tocados.";
+  } else if(choice === 'falso') {
+    answerDiv.innerHTML = "Correto! <br> Morcegos são animais limpos ágeis e não são cegos, São vitais para o ecossistema, pois a maioria se alimenta de frutas ou insetos, sendo excelentes polinizadores e dispersores de sementes. Embora raramente transmitam raiva, por serem silvestres, nunca devem ser tocados.";
+  }
+
+   answerDiv.classList.remove('show'); 
+  setTimeout(() => answerDiv.classList.add('show'), 50);
+}
+</script>
+
+<br>
+
+
+<section class="quiz-section-4"> 
+  <div class="quiz-answer-quatro" id="quiz-answer-4">
+  </div>
+  
+  <div class="quiz-box-quatro">
+    <p class="p" style="font-size: 25px;">Os gatos pretos trazem azar</p>
+    <div class="quiz-buttons">
+      <button onclick="showAnswer4('verdadeiro')">Fato</button>
+      <button onclick="showAnswer4('falso')">Mito</button>
+    </div>
+  </div>
+
+
+</section>
+
+<script>
+function showAnswer4(choice) {
+  const answerDiv = document.getElementById('quiz-answer-4');
+
+  if(choice === 'verdadeiro') {
+    answerDiv.innerHTML = "Incorreto! <br> Muitas culturas acreditam que gatos pretos são sinais de mau agouro, especialmente se cruzarem o caminho de alguém, mas isso é mentira, e muitos deles morrem por essa superstição.";
+  } else if(choice === 'falso') {
+    answerDiv.innerHTML = "Correto! <br> Muitas culturas acreditam que gatos pretos são sinais de mau agouro, especialmente se cruzarem o caminho de alguém, mas isso é mentira, e muitos deles morrem por essa superstição.";
+  }
+
+   answerDiv.classList.remove('show'); 
+  setTimeout(() => answerDiv.classList.add('show'), 50);
+}
+</script>
+
+
+
+<section class="listas-section">
+  <div class="lista">
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 1">
+      <div class="item-texto">
+        <h3>A verdade sobre os sapos</h3>
+        <p>Alguns sapos têm glândulas que liberam toxinas, mas isso só <br>
+          acontece se forem apertados ou machucados, não “soltam” <br>
+          veneno como muitos dizem.</p>
+      </div>
+    </div>
+
+
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 2">
+      <div class="item-texto">
+        <h3>Curiosidade</h3>
+        <p>As araras vivem em casal por toda a vida, e se o parceiro morre, <br>
+          muitas vezes elas não procuram outro.</p>
+      </div>
+    </div>
+
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 3">
+      <div class="item-texto">
+        <h3>Curiosidade</h3>
+        <p>Os urubus têm um dos melhores sistemas imunológicos do <br>
+        mundo animal, permitindo que comam carne em decomposição sem adoecer.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lista">
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 4">
+      <div class="item-texto">
+        <h3>Você sabia?</h3>
+        <p>Os beija-flores têm o coração mais rápido entre as aves, podendo <br>
+        bater até 1.200 vezes por minuto em pleno voo.</p>
+      </div>
+    </div>
+
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 5">
+      <div class="item-texto">
+        <h3>Curiosidade</h3>
+        <p>Os tamanduás-bandeira têm uma língua que pode medir até 60 cm, <br>
+        coberta de uma  substância pegajosa para capturar formigas e cupins <br>
+        rapidamente</p>
+      </div>
+    </div>
+
+    <div class="item-lista">
+      <img src="./imgs/simbolo.jfif" alt="Imagem 6">
+      <div class="item-texto">
+        <h3>Você sabia?</h3>
+        <p>As onças-pintadas precisam de territórios enormes — uma única <br>
+        onça pode ocupar até 100 km² de floresta, dependendo da quantidade <br>
+        de presas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="secao-imagem-textos"> 
+    <div class="bloco-texto">
+      <h1>Superstições</h1>
+      <p>Não acredite em superstições, muitos animais <br>
+        inocentes morrem desnecessáriamente por mentiras <br>
+        que contam sobre eles</p>
+    </div>
+    <div class="bloco-texto">
+      <h1>Mude sua visão</h1>
+      <p>Animais não atacam por maldade, ou estão com medo ou apenas <br>
+         defendem seu espaço quando o humano invade seu habitat.</p>
+    </div>
+    <div class="bloco-texto">
+      <h1>Espalhe a verdade</h1>
+      <p>Para evitar que mais animais morram pela maldade <br>
+        humana, desmentifique as superstições!</p>
+    </div>
+</section>
+
+<section class="secao-pergunta"> 
+  <div class="lado-imagem">
+    <img src="./imgs/peixes.jfif" alt="Imagem lateral">
+  </div>
+
+  <div class="lado-conteudo">
+    <h2>Dúvidas Frequentes</h2>
+
+    <div class="accordion" id="faqAccordion1">
+
+    
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingOne">
+          <button class="btn btn-link btn-block text-left p-3" type="button"
+                  data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+            Os animais silvestres sentem saudade de outros animais ou dos lugares onde viviam?
+          </button>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion1">
+          <div class="card-body">
+            Os animais silvestres não sentem “saudade” da mesma forma que os humanos, mas
+            eles podem sentir falta e reconhecer lugares, cheiros e companheiros com os quais
+            estavam acostumados. 
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingTwo">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+            É verdade que toda cobra é venenosa?
+          </button>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion1">
+          <div class="card-body">
+            A maioria das cobras não possui veneno. No Brasil, menos de 20% das espécies são peçonhentas —
+             como jararaca, coral-verdadeira e cascavel.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingThree">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+           Um animal nascido e criado em cativeiro consegue sobreviver na natureza?
+          </button>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion1">
+          <div class="card-body">
+            geralmente não consegue sobreviver na natureza, porque não aprende a caçar, se
+defender nem a evitar perigos.
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingFour">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+            Quais espécies podem ser mantidas legalmente em cativeiro?
+          </button>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion1">
+          <div class="card-body">
+            Apenas animais autorizados por órgãos ambientais, com licença adequada. O IBAMA disponibiliza listas oficiais de espécies de animais silvestres que podem ser mantidas em cativeiro legalmente,
+            regras e licenças necessárias para criação ou manutenção e espécies totalmente proibidas de posse, reprodução ou comércio.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="secao-pergunta"> 
+
+ 
+  <div class="lado-conteudo">
+    <h2>Dúvidas Frequentes</h2>
+
+    <div class="accordion" id="faqAccordion2">
+
+      
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingFive">
+          <button class="btn btn-link btn-block text-left p-3" type="button"
+                  data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="true" aria-controls="collapseFive">
+           É verdade que polvos tem 3 corações?
+          </button>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion2">
+          <div class="card-body">
+           Sim, é um fato! Polvos realmente possuem três corações. dos quais dois são corações
+          branquiais que bombeiam sangue para as brânquias, e um coração sistêmico que
+          bombeia o sangue oxigenado para o resto do corpo.
+
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingSix">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseSix"
+                  aria-expanded="false" aria-controls="collapseSix">
+            É verdade que cobras bebem leite?
+          </button>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion2">
+          <div class="card-body">
+            Não, cobras são carnívoras e não têm enzimas para digerir leite. Elas só bebem água.
+            Esse mito veio de antigas histórias rurais.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingSeven">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseSeven"
+                  aria-expanded="false" aria-controls="collapseSeven">
+            Encontrei um ninho próximo à minha casa, o que faço?
+          </button>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion2">
+          <div class="card-body">
+            Aguarde os filhotes saírem naturalmente. Após isso, tome medidas para evitar que novas aves utilizem o local, importante, 
+            ninhos são protegidos por lei. Para remoção urgente, é necessário solicitar autorização à equipe técnica do órgão ambiental.
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="card mb-3">
+        <div class="card-header p-0" id="headingEight">
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button"
+                  data-toggle="collapse" data-target="#collapseEight"
+                  aria-expanded="false" aria-controls="collapseEight">
+           Quero levar meu animal silvestre legalizado para passear em parques, como faço?
+          </button>
+        </div>
+        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion2">
+          <div class="card-body">
+            Evite, animais silvestres de cativeiro podem se estressar em ambientes abertos, pois estão acostumados com o ambiente mais resrvado de sua residência,
+            expô-los pode tornar seu comportamento imprevisível e pode causar fugas ou ataques, colocando pessoas em risco.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="lado-imagem">
+    <img src="./imgs/macaquinhos.jfif" alt="Imagem lateral">
+  </div>
+
+</section>
+
+
+
+
+
+<footer class="custom-footer">
+  <div class="footer-content">
+
+    <div class="footer-box footer-col1">
+      <div class="footer-logo-title">
+        <img src="./imgs/logo_pagina.png" alt="Logo" class="footer-logo">
+        <h2 style="margin-left: -20px;">TecFauna</h2>
+      </div>
+      <p>Unindo pessoas e tecnologia para proteger
+      quem não pode pedir ajuda.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contate-nos</h3>
+      <p>(+55) 119999999</p>
+      <p>E-mail: <a href="tecfauna@gmail.com">tecfauna@gmail.com</a></p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Links rápidos</h3>
+      <ul>
+        <li><a href="./sobre_nos.html">Sobre nós</a></li>
+        <li><a href="./mitos.html">Mitos e dúvidas</a></li>
+        <li><a href="./legislacao.html">Legislação</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <ul>
+        <li><a href="./guia.html">Como denunciar</a></li>
+        <li><a href="../denuncias/denuncia_html.php">Denuncie</a></li>
+        <li><a href="../denuncias/minhas_denuncias.php">Minhas denúncias</a></li>
+        <li><a href="./ongs.html">ONG's</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    © 2025 TecFauna. Projeto educacional de conscientização ambiental.
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entre em TecFauna</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cherry+Cream+Soda&family=Luckiest+Guy&family=Titan+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="form-container">
+
+    <div class="form-box login-form" id="login-form">
+        <h2 style=" font-family: 'Acme', sans-serif;">Login</h2>
+        <form action="login.php" method="post">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <button type="submit">Logar</button>
+            <p class="toggle-link">Não tem cadastro? <span onclick="showSignup()">Cadastrar</span></p>
+        </form>
+    </div>
+    
+    <div class="form-box cadastro-form" id="signup-form" style="display:none;">
+        <h2 style=" font-family: 'Acme', sans-serif;">Cadastre-se</h2>
+        <form action="cadastro.php" method="post" enctype="multipart/form-data">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+            <label>Senha</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nasc" required>
+            <button type="submit">Cadastrar</button>
+            <p class="toggle-link">Já tem cadastro? <span onclick="showLogin()">Login</span></p>
+        </form>
+    </div>
+
+</div>
+
+<script>
+function showSignup() {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+}
+
+function showLogin() {
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
